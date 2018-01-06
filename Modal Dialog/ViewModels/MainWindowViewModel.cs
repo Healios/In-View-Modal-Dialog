@@ -55,17 +55,14 @@ namespace Modal_Dialog.ViewModels
         private bool DeleteItemCommandCanExecute() => SelectedItem?.Length > 0;
         private void DeleteItemCommandExecute()
         {
-            // Create a new request and set the Item property (it's used in the ConfirmDeleteView).
             DeleteItemRequest request = new DeleteItemRequest { Item = SelectedItem };
 
-            // Bla.
             DeleteItemRequest.Raise(request, returned =>
             {
                 if (!request.Confirmed) return;
                 Items.Remove(SelectedItem);
             });
 
-            // Refresh the "CanExecute" status of the "Add Item" button.
             AddItemCommand.RaiseCanExecuteChanged();
         }
     }

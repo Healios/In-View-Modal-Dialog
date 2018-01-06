@@ -89,6 +89,7 @@ namespace Modal_Dialog
                 iira.Notification = args.Context;
                 iira.FinishInteraction = () =>
                 {
+                    // Remove the child FrameworkElement (the dialog) and execute the callback method.
                     backgroundElement.Children.Remove(FrameworkElementContent);
                     grid.Children.Remove(backgroundElement);
                     args.Callback();

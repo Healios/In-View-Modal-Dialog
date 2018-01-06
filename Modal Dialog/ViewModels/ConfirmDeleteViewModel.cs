@@ -9,7 +9,6 @@ using Prism.Mvvm;
 
 namespace Modal_Dialog.ViewModels
 {
-    // We need to implement IInteractionRequestAware to be able to accept the sent request.
     internal class ConfirmDeleteViewModel : BindableBase, IInteractionRequestAware
     {
         // Constructor.

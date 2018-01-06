@@ -30,7 +30,7 @@ namespace Modal_Dialog
     {
         // Properties.
         /// <summary>
-        /// The content of the child FrameworkElement to display as part of the popup.
+        /// The content of the child FrameworkElement to display as part of the dialog.
         /// </summary>
         public static readonly DependencyProperty FrameworkElementContentProperty =
         DependencyProperty.Register("FrameworkElementContent", typeof(FrameworkElement), typeof(InViewDialogAction), new PropertyMetadata(null));

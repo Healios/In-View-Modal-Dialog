@@ -9,7 +9,7 @@ using Prism.Interactivity.InteractionRequest;
 
 namespace Modal_Dialog
 {
-    /// Copyright [2018] [Marcus Raevmann Brown]
+    /// Copyright 2018 Marcus Raevmann Brown
     ///
     /// Licensed under the Apache License, Version 2.0 (the "License");
     /// you may not use this file except in compliance with the License.
